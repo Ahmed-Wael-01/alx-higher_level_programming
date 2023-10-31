@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 	while (1)
 	{
 		turtle = turtle->next;
-		if (turtle == NULL)
+		if (turtle == NULL || rabbit->next == NULL)
 			return (0);
 		rabbit = rabbit->next->next;
 		if (rabbit == NULL)
