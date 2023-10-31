@@ -7,13 +7,11 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *turtle;
-	listint_t *rabbit;
+	listint_t *turtle = list;
+	listint_t *rabbit = list;
 
 	if (list == NULL)
 		return (0);
-	turtle = list;
-	rabbit = list;
 
 	while (1)
 	{
