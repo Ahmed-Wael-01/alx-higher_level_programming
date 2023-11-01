@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
-#include <stdlib.h>
 
 /**
  * insert_node - inserts a node in a location
@@ -36,5 +34,5 @@ listint_t *insert_node(listint_t **head, int number)
 		}
 		curr = curr->next;
 	}
-	return (NULL)
+	return (NULL);
 }
