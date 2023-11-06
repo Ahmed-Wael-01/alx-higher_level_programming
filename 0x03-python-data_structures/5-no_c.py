@@ -5,3 +5,4 @@ def no_c(my_string):
         if my_string[x] == 'c' or my_string[x] == 'C':
             continue
         new += my_string[x]
+    return new
