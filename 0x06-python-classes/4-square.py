@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""create a square"""
+"""create squares"""
 
 
 class Square:
