@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""create squares"""
+
 class Square:
+    """init one"""
     def __init__(self, size=0):
         if (type(size) != int):
             raise TypeError("size must be an integer")
