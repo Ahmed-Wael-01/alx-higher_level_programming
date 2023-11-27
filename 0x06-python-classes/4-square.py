@@ -16,8 +16,8 @@ class Square:
         return (self.__size * self.__size)
 
     @size.setter
-    """set the value"""
     def size(self, value):
+        """set the value"""
         if (type(value) != int):
             raise TypeError("size must be an integer")
         elif (value < 0):
@@ -25,6 +25,6 @@ class Square:
         self.__size = value
 
     @property
-    """return the value"""
     def size(self):
+        """return the value"""
         return self.__size
