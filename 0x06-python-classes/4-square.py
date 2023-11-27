@@ -15,6 +15,7 @@ class Square:
     def area(self):
         return (self.__size * self.__size)
 
+    @sizeset
     """set the value"""
     def size(self, value):
         if (type(value) != int):
@@ -23,6 +24,7 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @sizereturn
     """return the value"""
     def size(self):
-        return __size
+        return self.__size
