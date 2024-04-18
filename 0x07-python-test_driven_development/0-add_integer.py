@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """Module for add method."""
 
+
 def add_integer(a, b=98):
-    if type(a) != int and type(a) != float:
+    """function to add two integers"""
+    if isinstance(a, int) is False and isinstance(a, float) is False:
         raise TypeError("a must be an integer")
-    if type(b) != int and type(b) != float:
+    if isinstance(b, int) is False and isinstance(b, float) is False:
         raise TypeError("b must be an integer")
     return int(a) + int(b)
+
 
 if __name__ == "__main__":
     import doctest
