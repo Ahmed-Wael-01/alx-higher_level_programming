@@ -51,3 +51,7 @@ Test integer matrix but string div:
 Test integer matrix with infinit div:
 	>>> matrix_divided([[2, 4, 0], [1, 2, 8]], float('inf'))
 	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Test integer matrix with one infinit element and integer div:
+	>>> matrix_divided([[2, 4, 0], [1, float('inf'), 8]], 2)
+	[[1.0, 2.0, 0.0], [0.5, inf, 4.0]]
