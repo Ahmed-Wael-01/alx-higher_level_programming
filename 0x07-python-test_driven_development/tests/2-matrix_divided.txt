@@ -1,0 +1,53 @@
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Test normal matrix with normal div:
+	>>> matrix_divided([[2, 4, 0], [1, 2, 8]], 2)
+	[[1.0, 2.0, 0.0], [0.5, 1.0, 4.0]]
+
+Test normal matrix with div 0:
+	>>> matrix_divided([2, 4, 0], 0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by zero
+
+Test float matrix with float div:
+	>>> matrix_divided([[2.5, 3.5, 5.8], [1.3, 1.75, 4.6]], 7.5)
+	[[0.33, 0.47, 0.77], [0.17, 0.23, 0.61]]
+
+Test single list in the matrix:
+	>>> matrix_divided([[8]], 4)
+	[[2.0]]
+
+Test negative matrix with positive div:
+	>>> matrix_divided([[-2, -4, -0], [-1, -2, -8]], 2)
+	[[-1.0, -2.0, 0.0], [-0.5, -1.0, -4.0]]
+
+Test positive matrix with negative div:
+	>>> matrix_divided([[2, 4, 0], [1, 2, 8]], -2)
+	[[-1.0, -2.0, -0.0], [-0.5, -1.0, -4.0]]
+
+Test unbalanced matrix:
+	>>> matrix_divided([[2, 4, 0], [1, 2]], -2)
+	Traceback (most recent call last):
+	...
+	TypeError: Each row of the matrix must have the same size
+
+Test unvalid type in matrix:
+	>>> matrix_divided([[2, 4, 0], [1, '2', 8]], 2)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test integer matrix with integer div:
+	>>> matrix_divided([[2, 4, 8], [2, 16, 12]], 2)
+	[[1.0, 2.0, 4.0], [1.0, 8.0, 6.0]]
+
+Test integer matrix but string div:
+	>>> matrix_divided([[2, 4, 0], [1, 2, 8]], "2")
+	Traceback (most recent call last):
+	...
+	TypeError: div must be a number
+
+Test integer matrix with infinit div:
+	>>> matrix_divided([[2, 4, 0], [1, 2, 8]], float('inf'))
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
