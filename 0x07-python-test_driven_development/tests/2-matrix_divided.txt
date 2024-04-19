@@ -55,3 +55,9 @@ Test integer matrix with infinit div:
 Test integer matrix with one infinit element and integer div:
 	>>> matrix_divided([[2, 4, 0], [1, float('inf'), 8]], 2)
 	[[1.0, 2.0, 0.0], [0.5, inf, 4.0]]
+
+Test void matrix:
+	>>> matrix_divided([], 1)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
