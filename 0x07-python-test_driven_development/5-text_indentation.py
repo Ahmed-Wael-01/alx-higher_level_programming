@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """indent a paragraph"""
 
+
 def text_indentation(text):
     """prints a paragraph after putting 2 new lines after each . ? :"""
     if isinstance(text, str) is False:
@@ -9,6 +10,7 @@ def text_indentation(text):
         text = (delim + "\n\n").join(
                 [line.strip(" ") for line in text.split(delim)])
     print(text, end="")
+
 
 if __name__ == '__main__':
     import doctest
