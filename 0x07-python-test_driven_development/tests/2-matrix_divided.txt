@@ -61,3 +61,15 @@ Test void matrix:
 	Traceback (most recent call last):
 	...
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test missing 1 arg:
+	>>> matrix_divided([[2]])
+	Traceback (most recent call last):
+	...
+	TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Test missing 2 arg:
+        >>> matrix_divided()
+        Traceback (most recent call last):
+        ...
+        TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
