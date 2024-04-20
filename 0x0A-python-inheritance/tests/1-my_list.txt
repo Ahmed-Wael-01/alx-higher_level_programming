@@ -9,4 +9,21 @@ Test 3 elements:
 	>>> l = MyList([1, 5, 16])
 	>>> l.print_sorted()
 	[1, 5, 16]
-	
+	>>> l
+	[1, 5, 16]
+
+Test test __str__:
+	>>> l = MyList([1, 2, 3])
+	>>> l
+	[1, 2, 3]
+
+Test append:
+	>>> l = MyList()
+	>>> l.append(5)
+	>>> l
+	[5]
+
+Test negative:
+	>>> l = MyList([-1, -5, -2])
+	>>> l.print_sorted()
+	[-5, -2, -1]
