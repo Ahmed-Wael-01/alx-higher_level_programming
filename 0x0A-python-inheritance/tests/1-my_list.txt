@@ -9,8 +9,13 @@ Test 3 elements:
 	>>> l = MyList([1, 5, 16])
 	>>> l.print_sorted()
 	[1, 5, 16]
+
+Test unchanged list:
+	>>> l = MyList([4, 2, 5])
+	>>> l.print_sorted()
+	[2, 4, 5]
 	>>> l
-	[1, 5, 16]
+	[4, 2, 5]
 
 Test test __str__:
 	>>> l = MyList([1, 2, 3])
