@@ -3,5 +3,6 @@
 
 
 class MyList(list):
+    """class that inherits from list class"""
     def print_sorted(self):
         print(sorted(list))
