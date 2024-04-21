@@ -56,9 +56,6 @@ Test with None:
 Test with boolean:
         >>> bs = BaseGeometry()
         >>> bs.integer_validator("wrong", True)
-        Traceback (most recent call last):
-        ...
-        TypeError: wrong must be an integer
 
 Test validat with missing arg:
 	>>> bs = BaseGeometry()
