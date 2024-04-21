@@ -5,7 +5,7 @@
 Rectangle = __import__('9-rectangle').Recrangle
 
 
-Square(Rectangle):
+class Square(Rectangle):
     """making a cute square"""
     def __init__(self, size):
         """init a square"""
