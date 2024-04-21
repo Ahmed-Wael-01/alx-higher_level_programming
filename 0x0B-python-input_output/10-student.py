@@ -12,10 +12,10 @@ class Student():
 
     def to_json(self, attrs=None):
         """returns json"""
-        if type(attrs) is not list:
+        if type(attrs) is not list or len(attrs) == 0:
             return self.__dict__
         for x in attrs:
-            if type(attrs) is not str:
+            if type(x) is not str:
                 return self.__dict__
         new_dict = dict()
         for key, val in self.__dict__:
