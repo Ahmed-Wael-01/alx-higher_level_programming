@@ -1,0 +1,27 @@
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test type error:
+	>>> bs = BaseGeometry()
+	>>> bs.integer_validator("wrong", "type")
+	Traceback (most recent call last):
+	...
+	TypeError: wrong must be an integer
+
+Test value error with 0:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wong", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: wong must be greater than 0
+
+Test value error with negative:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("maria", -2)
+        Traceback (most recent call last):
+        ...
+        TypeError: maria must be an integer
+
+Test normal:
+	>>> bs = BaseGeometry()
+        >>> bs.integer_validator("mary", 7)
+	
