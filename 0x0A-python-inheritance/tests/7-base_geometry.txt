@@ -19,7 +19,7 @@ Test value error with negative:
         >>> bs.integer_validator("maria", -2)
         Traceback (most recent call last):
         ...
-        TypeError: maria must be an integer
+        ValueError: maria must be an integer
 
 Test normal:
 	>>> bs = BaseGeometry()
