@@ -18,7 +18,7 @@ class Student():
             if type(x) is not str:
                 return self.__dict__
         new_dict = dict()
-        for key, val in self.__dict__:
+        for key, val in self.__dict__.items():
             if key in attrs:
                 new_dict[key] = val
         return new_dict
