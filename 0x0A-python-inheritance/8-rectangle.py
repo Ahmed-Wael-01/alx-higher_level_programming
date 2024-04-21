@@ -15,7 +15,8 @@ class BaseGeometry():
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
-class Rectangle(BaseGeometry)
+
+class Rectangle(BaseGeometry):
     """simple rectangle class"""
     def __init__(self, width, height):
         """initializes the rectangle"""
