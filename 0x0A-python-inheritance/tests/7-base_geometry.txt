@@ -25,6 +25,41 @@ Test normal:
 	>>> bs = BaseGeometry()
         >>> bs.integer_validator("mary", 7)
 
+Test validate with set:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wrong", (4,))
+        Traceback (most recent call last):
+        ...
+        TypeError: wrong must be an integer
+
+Test validate with list:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wrong", [4])
+        Traceback (most recent call last):
+        ...
+        TypeError: wrong must be an integer
+
+Test validate with dict:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wrong", {3, 4})
+        Traceback (most recent call last):
+        ...
+        TypeError: wrong must be an integer
+
+Test with None:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wrong", None)
+        Traceback (most recent call last):
+        ...
+        TypeError: wrong must be an integer
+
+Test with boolean:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator("wrong", True)
+        Traceback (most recent call last):
+        ...
+        TypeError: wrong must be an integer
+
 Test validat with missing arg:
 	>>> bs = BaseGeometry()
         >>> bs.integer_validator("maria")
