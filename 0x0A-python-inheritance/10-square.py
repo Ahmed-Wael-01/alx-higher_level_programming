@@ -2,7 +2,7 @@
 """simple square class"""
 
 
-Rectangle = __import__('9-rectangle').Recrangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
