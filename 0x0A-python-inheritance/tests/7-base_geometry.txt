@@ -24,4 +24,24 @@ Test value error with negative:
 Test normal:
 	>>> bs = BaseGeometry()
         >>> bs.integer_validator("mary", 7)
-	
+
+Test validat with missing arg:
+	>>> bs = BaseGeometry()
+        >>> bs.integer_validator("maria")
+	Traceback (most recent call last):
+        ...
+        TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test validat with missing 2 arg:
+        >>> bs = BaseGeometry()
+        >>> bs.integer_validator()
+        Traceback (most recent call last):
+        ...
+        TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test area:
+	>>> bs = BaseGeometry()
+	>>> bs.area()
+	Traceback (most recent call last):
+	...
+	Exception: area() is not implemented	
