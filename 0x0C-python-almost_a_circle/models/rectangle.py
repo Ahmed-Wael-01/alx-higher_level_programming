@@ -113,7 +113,6 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
             return
         if len(args) >= 1:
-            print("ruin it")
             self.__id = args[0]
         if len(args) >= 2:
             self.__width = args[1]
