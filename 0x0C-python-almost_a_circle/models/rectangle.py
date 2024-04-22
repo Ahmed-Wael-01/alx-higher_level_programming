@@ -91,9 +91,9 @@ class Rectangle(Base):
 
     def display(self):
         """it displays the rectangle in high quality"""
-        print('\n' * self.__y)
+        print('\n' * self.__y, end='')
         for x in range(self.__height):
-            print(' ' * self.__x)
+            print(' ' * self.__x, end='')
             for j in range(self.__width):
                 print("#", end='')
             print()
