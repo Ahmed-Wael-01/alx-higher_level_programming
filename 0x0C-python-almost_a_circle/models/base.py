@@ -2,7 +2,7 @@
 """base class file"""
 
 
-class Base():
+class Base:
     """the base and root class"""
     __nb_objects = 0
 
