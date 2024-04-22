@@ -100,7 +100,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """updates values of the rectangle"""
-        if args is None:
+        if not args:
             if "id" in kwargs:
                 self.__id = kwargs["id"]
             if "width" in kwargs:
