@@ -15,4 +15,4 @@ def pascal_triangle(n):
             else:
                 layer.append(pasc_tri[x - 2][j] + pasc_tri[x - 2][j - 1])
         pasc_tri.append(layer)
-    return pasc_trix
+    return pasc_tri
