@@ -25,6 +25,6 @@ class Student():
     
     def reload_from_json(self, json):
         """replace attributes"""
-        json[first_name] = self.first_name
-        json[last_name] = self.last_name
-        json[age] = self.age
+        self.first_name = json[first_name]
+        self.last_name = json[last_name]
+        self.age = json[age]
