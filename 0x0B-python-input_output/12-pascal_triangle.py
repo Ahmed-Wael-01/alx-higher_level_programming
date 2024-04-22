@@ -13,6 +13,6 @@ def pascal_triangle(n):
             if (j == 0 or j == len(pasc_tri)):
                 layer.append(1)
             else:
-                layer.append(pasc_tri[x - 1][j] + pasc_tri[x - 1][j - 1])
+                layer.append(pasc_tri[x - 2][j] + pasc_tri[x - 2][j - 1])
         pasc_tri.append(layer)
     return pasc_trix
