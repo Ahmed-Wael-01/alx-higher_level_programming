@@ -22,9 +22,11 @@ class Student():
             if key in attrs:
                 new_dict[key] = val
         return new_dict
-    
+
     def reload_from_json(self, json):
         """replace attributes"""
+        if len(json) == 0:
+            return
         self.first_name = json["first_name"]
         self.last_name = json["last_name"]
         self.age = json["age"]
