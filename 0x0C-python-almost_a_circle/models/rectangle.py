@@ -98,8 +98,20 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """updates values of the rectangle"""
+        if not args:
+            if "id" in kwargs:
+                self.__id = kwargs["id"]
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
+            return
         if len(args) >= 1:
             self.__id = args[0]
         if len(args) >= 2:
