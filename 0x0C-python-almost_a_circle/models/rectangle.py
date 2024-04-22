@@ -102,7 +102,6 @@ class Rectangle(Base):
         """updates values of the rectangle"""
         if args is None:
             if "id" in kwargs:
-                print("ruin it")
                 self.__id = kwargs["id"]
             if "width" in kwargs:
                 self.__width = kwargs["width"]
@@ -114,6 +113,7 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
             return
         if len(args) >= 1:
+            print("ruin it")
             self.__id = args[0]
         if len(args) >= 2:
             self.__width = args[1]
