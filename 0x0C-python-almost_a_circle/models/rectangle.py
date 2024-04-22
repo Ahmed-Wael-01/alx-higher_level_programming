@@ -13,22 +13,22 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    @proberty
+    @property
     def width(self):
         """gets the width"""
         return __width
 
-    @proberty
+    @property
     def height(self):
         """gets the height"""
         return __height
 
-    @proberty
+    @property
     def x(self):
         """gets x"""
         return __x
 
-    @proberty
+    @property
     def y(self):
         """gets y"""
         return __y
