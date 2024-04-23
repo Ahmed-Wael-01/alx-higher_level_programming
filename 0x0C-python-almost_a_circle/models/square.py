@@ -30,7 +30,7 @@ class Square(Rectangle):
         """updates values of the rectangle"""
         if not args:
             if "id" in kwargs:
-                self.__id = kwargs["id"]
+                self.id = kwargs["id"]
             if "size" in kwargs:
                 self.__width = kwargs["size"]
                 self.__height = kwargs["size"]
@@ -40,7 +40,7 @@ class Square(Rectangle):
                 self.__y = kwargs["y"]
         elif args and len(args) > 0:
             if len(args) >= 1:
-                self.__id = args[0]
+                self.id = args[0]
             if len(args) >= 2:
                 self.__width = args[1]
                 self.__height = args[1]
@@ -52,4 +52,4 @@ class Square(Rectangle):
     def __str__(self):
         """description of square"""
         "[Square] ({}) {}/{} - {}".format(
-                self.__id, self.__x, self.__y, self.__width)
+                self.id, self.__x, self.__y, self.__width)
