@@ -106,13 +106,10 @@ class Rectangle(Base):
             if "width" in kwargs:
                 self.__width = kwargs["width"]
             if "height" in kwargs:
-                print("ruin")
                 self.__height = kwargs["height"]
             if "x" in kwargs:
-                print("ruin")
                 self.__x = kwargs["x"]
             if "y" in kwargs:
-                print("ruin")
                 self.__y = kwargs["y"]
             return
         if len(args) >= 1:
