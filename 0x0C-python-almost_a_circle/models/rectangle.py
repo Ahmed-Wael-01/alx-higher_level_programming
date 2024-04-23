@@ -123,6 +123,12 @@ class Rectangle(Base):
             if len(args) >= 5:
                 self.__y = args[4]
 
+    def to_dictionary(self):
+        """returns dict"""
+        return {'x': self.__x, 'y': self.__y,
+                'id': self.__id, 'height': self.__height,
+                'width': self.__width}
+
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
