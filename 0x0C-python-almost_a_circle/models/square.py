@@ -49,6 +49,11 @@ class Square(Rectangle):
             if len(args) >= 4:
                 self.__y = args[3]
 
+    def to_dictionary(self):
+        """square dict"""
+        return {'x': self.__x, 'y': self.__y,
+                'id': self.id, 'size': self.__width}
+
     def __str__(self):
         """description of square"""
         "[Square] ({}) {}/{} - {}".format(
