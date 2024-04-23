@@ -102,7 +102,7 @@ class Rectangle(Base):
         """updates values of the rectangle"""
         if not args:
             if "id" in kwargs:
-                self.__id = kwargs["id"]
+                self.id = kwargs["id"]
             if "width" in kwargs:
                 self.__width = kwargs["width"]
             if "height" in kwargs:
@@ -113,7 +113,7 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
         elif args and len(args) > 0:
             if len(args) >= 1:
-                self.__id = args[0]
+                self.id = args[0]
             if len(args) >= 2:
                 self.__width = args[1]
             if len(args) >= 3:
@@ -126,7 +126,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """returns dict"""
         return {'x': self.__x, 'y': self.__y,
-                'id': self.__id, 'height': self.__height,
+                'id': self.id, 'height': self.__height,
                 'width': self.__width}
 
     def __str__(self):
