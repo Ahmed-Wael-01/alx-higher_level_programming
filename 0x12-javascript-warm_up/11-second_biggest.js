@@ -13,7 +13,7 @@ for (let i = 2; i < process.argv.length; i++) {
     continue;
   }
   if ((isNaN(secondRunner) ||
-      parseInt(process.argv[i]) > parseInt(process.argv[secondRunner])) && i != biggest) {
+      parseInt(process.argv[i]) > parseInt(process.argv[secondRunner])) && i !== biggest) {
     secondRunner = i;
   }
 }
