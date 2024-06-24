@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-connects to db and lists all statesiasafsd
-dffsdgsfgsjdbskjfvhskjdhsdjskjd sdkjjksgk
+connects to db and lists all states
 """
 
 import sys
