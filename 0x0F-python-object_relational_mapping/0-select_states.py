@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-connects to db and lists all statesiasafsd
-dffsdgsfgsjdbskjfvhskjdhsdjskjd sdkjjksgk
+This script lists all states from the
+database `hbtn_0e_0_usa`.
 """
 
 import sys
