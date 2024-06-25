@@ -31,3 +31,5 @@ if __name__ == '__main__':
     rows = cur.fetchall()
     if rows is not None:
         print(", ".join([row[1] for row in rows]))
+    cur.close()
+    db.close()
