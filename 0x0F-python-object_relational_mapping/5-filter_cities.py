@@ -14,7 +14,7 @@ if __name__ == '__main__':
     cur = db.cursor()
     cur.execute("""
             SELECT
-                cities.id, cities.name
+                cities.name
             FROM
                 cities
             JOIN
@@ -30,6 +30,4 @@ if __name__ == '__main__':
         })
     rows = cur.fetchall()
     if rows is not None:
-        print(", ".join([row[1] for row in rows]))
-    cur.close()
-    db.close()
+        print(", ".join([row[0] for row in rows]))
