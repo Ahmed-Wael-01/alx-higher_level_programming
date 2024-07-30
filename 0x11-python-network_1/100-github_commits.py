@@ -12,7 +12,10 @@ if __name__ == "__main__":
 
     r = requests.get(url)
     coms = r.json()
-    for i in range(10):
-        print("{}: {}".format(
-                coms[i].get("sha"),
-                coms[i].get("commit").get("author").get("name")))
+    try:
+        for i in range(10):
+            print("{}: {}".format(
+                    coms[i].get("sha"),
+                    coms[i].get("commit").get("author").get("name")))
+    except Exception as e:
+        pass
