@@ -3,7 +3,7 @@
     python script to fetch given website
 """
 
-import urllib
+import urllib.parse, urllib.request
 import sys
 
 if __name__ == "__main__":
