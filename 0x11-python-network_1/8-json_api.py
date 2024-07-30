@@ -21,5 +21,5 @@ if __name__ == "__main__":
         else:
             print("[{}] {}".format(
                 res_dict.get('id'), res_dict.get('name')))
-    except:
+    except Exception as e:
         print("Not a valid JSON")
