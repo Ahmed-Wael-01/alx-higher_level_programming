@@ -9,10 +9,10 @@ request(process.argv[2],
       console.log(error);
     }
     const bodyList = JSON.parse(body).results;
-    const mainc = 'https://swapi-api.alx-tools.com/api/people/18/';
     let counter = 0;
     for (let i = 0; i < bodyList.length; i++) {
-      if (bodyList[i].characters.includes(mainc)) {
+      if (bodyList[i].characters.find(
+        (character) => character.endsWith('/18/'))) {
         counter++;
       }
     }
